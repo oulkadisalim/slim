@@ -1,0 +1,18 @@
+Cinquieme Exemple.
+
+Introduction a Doxygen
+Generateur automatique de Documentation
+
+Presenter les principaux tags
+Ne pas oublier le TODO
+Presenter rapidement le ficher Doxyfile
+
+Montrer que l'on peut avoir des graphes entre fichiers.
+Ajouter deux .h et montrer le graph genere.
+
+# CALL_GRAPH             = NO
+# HAVE_DOT
+
+Par contre préciser que cela nécessite d'avoir installé les outils Graphviz
+
+Montrer que l'on peut avoir son propre commentaire qui n'est pas inclus a la doc

@@ -1,0 +1,61 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.13"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Fifth:  Fichier source de readwritepng.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Fifth
+   &#160;<span id="projectnumber">1.0</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Généré par Doxygen 1.8.13 -->
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',false,false,'search.php','Recherche');
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">readwritepng.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="readwritepng_8h.html">Aller à la documentation de ce fichier.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;</div><div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="preprocessor">#ifndef __READWRITEPNG_H__</span></div><div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="preprocessor">#define __READWRITEPNG_H__</span></div><div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;</div><div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="preprocessor">#include &lt;png.h&gt;</span></div><div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;</div><div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="preprocessor">#ifdef __cplusplus </span></div><div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="keyword">extern</span> <span class="stringliteral">&quot;C&quot;</span> {</div><div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="preprocessor">#endif</span></div><div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;  </div><div class="line"><a name="l00039"></a><span class="lineno"><a class="line" href="readwritepng_8h.html#a817d48945e30fe4a531a8e69f185ebae">   39</a></span>&#160;  <span class="keyword">typedef</span> <span class="keyword">struct </span><a class="code" href="structImagePNG.html">ImagePNG</a> <a class="code" href="structImagePNG.html">ImagePNG</a>;</div><div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;  </div><div class="line"><a name="l00041"></a><span class="lineno"><a class="line" href="structImagePNG.html">   41</a></span>&#160;  <span class="keyword">struct </span><a class="code" href="structImagePNG.html">ImagePNG</a>{</div><div class="line"><a name="l00042"></a><span class="lineno"><a class="line" href="structImagePNG.html#a950f3eeb0fc775b73fa6dbe8774afd7b">   42</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="structImagePNG.html#a950f3eeb0fc775b73fa6dbe8774afd7b">width</a>;               </div><div class="line"><a name="l00043"></a><span class="lineno"><a class="line" href="structImagePNG.html#a22fa899749010ffdde3a9f2ca1baf5e4">   43</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="structImagePNG.html#a22fa899749010ffdde3a9f2ca1baf5e4">height</a>;              </div><div class="line"><a name="l00044"></a><span class="lineno"><a class="line" href="structImagePNG.html#a2b6155f88d1b6efca879367e4f790932">   44</a></span>&#160;    png_byte <a class="code" href="structImagePNG.html#a2b6155f88d1b6efca879367e4f790932">color_type</a>;     </div><div class="line"><a name="l00045"></a><span class="lineno"><a class="line" href="structImagePNG.html#a154234aa7f4e831c28e067521f68a3d1">   45</a></span>&#160;    png_byte <a class="code" href="structImagePNG.html#a154234aa7f4e831c28e067521f68a3d1">bit_depth</a>;      </div><div class="line"><a name="l00046"></a><span class="lineno"><a class="line" href="structImagePNG.html#a701cf7bb95ae374f8bd08594fb098b7b">   46</a></span>&#160;    png_bytep *<a class="code" href="structImagePNG.html#a701cf7bb95ae374f8bd08594fb098b7b">row_pointers</a>; </div><div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;  };</div><div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;</div><div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;  <span class="keyword">extern</span> <span class="keywordtype">void</span> <a class="code" href="readwritepng_8h.html#ae924d78dc98afe9e76db55c77d639511">read_png_file</a> (<span class="keyword">const</span> <span class="keywordtype">char</span> * filename, <a class="code" href="structImagePNG.html">ImagePNG</a> *Image);</div><div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;</div><div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;  <span class="keyword">extern</span> <span class="keywordtype">void</span> <a class="code" href="readwritepng_8h.html#a503162ce3da80c1228ca16ef9c13d8e7">write_png_file</a> (<span class="keyword">const</span> <span class="keywordtype">char</span> *filename, <a class="code" href="structImagePNG.html">ImagePNG</a> *Image);</div><div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;</div><div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;<span class="preprocessor">#ifdef __cplusplus</span></div><div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;} <span class="comment">// extern C</span></div><div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;<span class="preprocessor">#endif</span></div><div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;</div><div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;<span class="preprocessor">#endif</span></div><div class="ttc" id="structImagePNG_html"><div class="ttname"><a href="structImagePNG.html">ImagePNG</a></div><div class="ttdef"><b>Definition:</b> readwritepng.h:41</div></div>
+<div class="ttc" id="readwritepng_8h_html_ae924d78dc98afe9e76db55c77d639511"><div class="ttname"><a href="readwritepng_8h.html#ae924d78dc98afe9e76db55c77d639511">read_png_file</a></div><div class="ttdeci">void read_png_file(const char *filename, ImagePNG *Image)</div><div class="ttdoc">lit un fichier au format png </div><div class="ttdef"><b>Definition:</b> readwritepng.c:7</div></div>
+<div class="ttc" id="structImagePNG_html_a2b6155f88d1b6efca879367e4f790932"><div class="ttname"><a href="structImagePNG.html#a2b6155f88d1b6efca879367e4f790932">ImagePNG::color_type</a></div><div class="ttdeci">png_byte color_type</div><div class="ttdef"><b>Definition:</b> readwritepng.h:44</div></div>
+<div class="ttc" id="structImagePNG_html_a701cf7bb95ae374f8bd08594fb098b7b"><div class="ttname"><a href="structImagePNG.html#a701cf7bb95ae374f8bd08594fb098b7b">ImagePNG::row_pointers</a></div><div class="ttdeci">png_bytep * row_pointers</div><div class="ttdef"><b>Definition:</b> readwritepng.h:46</div></div>
+<div class="ttc" id="structImagePNG_html_a22fa899749010ffdde3a9f2ca1baf5e4"><div class="ttname"><a href="structImagePNG.html#a22fa899749010ffdde3a9f2ca1baf5e4">ImagePNG::height</a></div><div class="ttdeci">int height</div><div class="ttdef"><b>Definition:</b> readwritepng.h:43</div></div>
+<div class="ttc" id="structImagePNG_html_a154234aa7f4e831c28e067521f68a3d1"><div class="ttname"><a href="structImagePNG.html#a154234aa7f4e831c28e067521f68a3d1">ImagePNG::bit_depth</a></div><div class="ttdeci">png_byte bit_depth</div><div class="ttdef"><b>Definition:</b> readwritepng.h:45</div></div>
+<div class="ttc" id="readwritepng_8h_html_a503162ce3da80c1228ca16ef9c13d8e7"><div class="ttname"><a href="readwritepng_8h.html#a503162ce3da80c1228ca16ef9c13d8e7">write_png_file</a></div><div class="ttdeci">void write_png_file(const char *filename, ImagePNG *Image)</div><div class="ttdoc">ecrit une image dans un fichier au format png </div><div class="ttdef"><b>Definition:</b> readwritepng.c:66</div></div>
+<div class="ttc" id="structImagePNG_html_a950f3eeb0fc775b73fa6dbe8774afd7b"><div class="ttname"><a href="structImagePNG.html#a950f3eeb0fc775b73fa6dbe8774afd7b">ImagePNG::width</a></div><div class="ttdeci">int width</div><div class="ttdef"><b>Definition:</b> readwritepng.h:42</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Généré par &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.13
+</small></address>
+</body>
+</html>

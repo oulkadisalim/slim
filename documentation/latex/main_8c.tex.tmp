@@ -1,0 +1,109 @@
+\section{Référence du fichier main.\+c}
+\label{main_8c}\index{main.\+c@{main.\+c}}
+
+
+Programme illustrant les capacites de generateur de commentaires de doxygen.  
+
+
+{\ttfamily \#include $<$stdlib.\+h$>$}\newline
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+{\ttfamily \#include $<$math.\+h$>$}\newline
+{\ttfamily \#include \char`\"{}readwritepng.\+h\char`\"{}}\newline
+Graphe des dépendances par inclusion de main.\+c\+:
+% FIG 0
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \textbf{ D\+E\+B\+UG}~if (1) printf
+\end{DoxyCompactItemize}
+\subsection*{Fonctions}
+\begin{DoxyCompactItemize}
+\item 
+void \textbf{ process\+\_\+png\+\_\+file} (\textbf{ Image\+P\+NG} $\ast$Image)
+\item 
+void \textbf{ convert\+BW} (\textbf{ Image\+P\+NG} $\ast$Image)
+\item 
+void \textbf{ sobel\+Operator} (\textbf{ Image\+P\+NG} $\ast$Image, \textbf{ Image\+P\+NG} $\ast$Source)
+\item 
+int \textbf{ main} (int argc, char $\ast$argv[$\,$])
+\end{DoxyCompactItemize}
+
+
+\subsection{Description détaillée}
+Programme illustrant les capacites de generateur de commentaires de doxygen. 
+
+\begin{DoxyAuthor}{Auteur}
+O\+U\+L\+K\+A\+DI
+
+Email \+: {\tt O\+U\+L\+K\+A\+D\+I\+S\+A\+L\+I\+M@\+G\+M\+A\+I\+L.\+C\+OM} 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+25/10/2018 
+\end{DoxyDate}
+
+
+\subsection{Documentation des macros}
+\mbox{\label{main_8c_ad72dbcf6d0153db1b8d8a58001feed83}} 
+\index{main.\+c@{main.\+c}!D\+E\+B\+UG@{D\+E\+B\+UG}}
+\index{D\+E\+B\+UG@{D\+E\+B\+UG}!main.\+c@{main.\+c}}
+\subsubsection{D\+E\+B\+UG}
+{\footnotesize\ttfamily \#define D\+E\+B\+UG~if (1) printf}
+
+Utilisé pour afficher des messages si necessaire 
+
+\subsection{Documentation des fonctions}
+\mbox{\label{main_8c_a8946c4c9aa6870495b10a4b40d1c6542}} 
+\index{main.\+c@{main.\+c}!convert\+BW@{convert\+BW}}
+\index{convert\+BW@{convert\+BW}!main.\+c@{main.\+c}}
+\subsubsection{convert\+B\+W()}
+{\footnotesize\ttfamily void convert\+BW (\begin{DoxyParamCaption}\item[{\textbf{ Image\+P\+NG} $\ast$}]{Image }\end{DoxyParamCaption})}
+
+
+
+Références Image\+P\+N\+G\+::height, Image\+P\+N\+G\+::row\+\_\+pointers, et Image\+P\+N\+G\+::width.
+
+
+
+Référencé par main().
+
+\mbox{\label{main_8c_a0ddf1224851353fc92bfbff6f499fa97}} 
+\index{main.\+c@{main.\+c}!main@{main}}
+\index{main@{main}!main.\+c@{main.\+c}}
+\subsubsection{main()}
+{\footnotesize\ttfamily int main (\begin{DoxyParamCaption}\item[{int}]{argc,  }\item[{char $\ast$}]{argv[$\,$] }\end{DoxyParamCaption})}
+
+
+
+Références convert\+B\+W(), read\+\_\+png\+\_\+file(), sobel\+Operator(), et write\+\_\+png\+\_\+file().
+
+Voici le graphe d\textquotesingle{}appel pour cette fonction \+:
+% FIG 1
+\mbox{\label{main_8c_aadac528ba0a0aed0a217efe7a04a0813}} 
+\index{main.\+c@{main.\+c}!process\+\_\+png\+\_\+file@{process\+\_\+png\+\_\+file}}
+\index{process\+\_\+png\+\_\+file@{process\+\_\+png\+\_\+file}!main.\+c@{main.\+c}}
+\subsubsection{process\+\_\+png\+\_\+file()}
+{\footnotesize\ttfamily void process\+\_\+png\+\_\+file (\begin{DoxyParamCaption}\item[{\textbf{ Image\+P\+NG} $\ast$}]{Image }\end{DoxyParamCaption})}
+
+
+
+Références Image\+P\+N\+G\+::height, Image\+P\+N\+G\+::row\+\_\+pointers, et Image\+P\+N\+G\+::width.
+
+\mbox{\label{main_8c_a53d33ee23145c6b8e4062697b8062f85}} 
+\index{main.\+c@{main.\+c}!sobel\+Operator@{sobel\+Operator}}
+\index{sobel\+Operator@{sobel\+Operator}!main.\+c@{main.\+c}}
+\subsubsection{sobel\+Operator()}
+{\footnotesize\ttfamily void sobel\+Operator (\begin{DoxyParamCaption}\item[{\textbf{ Image\+P\+NG} $\ast$}]{Image,  }\item[{\textbf{ Image\+P\+NG} $\ast$}]{Source }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}{Paramètres}
+{\em la} & fonction sobel\+Operator utilise deux parametres qui sont\+: \doxyref{Image\+P\+NG}{p.}{structImagePNG} $\ast$\+Image et \doxyref{Image\+P\+NG}{p.}{structImagePNG} $\ast$\+Source \\
+\hline
+\end{DoxyParams}
+
+
+Références Image\+P\+N\+G\+::height, Image\+P\+N\+G\+::row\+\_\+pointers, et Image\+P\+N\+G\+::width.
+
+
+
+Référencé par main().
+

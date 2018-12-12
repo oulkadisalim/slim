@@ -1,0 +1,116 @@
+\section{Référence du fichier readwritepng.\+h}
+\label{readwritepng_8h}\index{readwritepng.\+h@{readwritepng.\+h}}
+
+
+Librairie permettant de lire/ecrire des png.  
+
+
+{\ttfamily \#include $<$png.\+h$>$}\newline
+Graphe des dépendances par inclusion de readwritepng.\+h\+:
+% FIG 0
+Ce graphe montre quels fichiers incluent directement ou indirectement ce fichier \+:
+% FIG 1
+\subsection*{Structures de données}
+\begin{DoxyCompactItemize}
+\item 
+struct \textbf{ Image\+P\+NG}
+\end{DoxyCompactItemize}
+\subsection*{Définitions de type}
+\begin{DoxyCompactItemize}
+\item 
+typedef struct \textbf{ Image\+P\+NG} \textbf{ Image\+P\+NG}
+\end{DoxyCompactItemize}
+\subsection*{Fonctions}
+\begin{DoxyCompactItemize}
+\item 
+void \textbf{ read\+\_\+png\+\_\+file} (const char $\ast$filename, \textbf{ Image\+P\+NG} $\ast$Image)
+\begin{DoxyCompactList}\small\item\em lit un fichier au format png \end{DoxyCompactList}\item 
+void \textbf{ write\+\_\+png\+\_\+file} (const char $\ast$filename, \textbf{ Image\+P\+NG} $\ast$Image)
+\begin{DoxyCompactList}\small\item\em ecrit une image dans un fichier au format png \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Description détaillée}
+Librairie permettant de lire/ecrire des png. 
+
+Librairie permettant de lire et ecrire des fichiers au format png. Cette librairie s\textquotesingle{}inspire de {\tt http\+://zarb.\+org/$\sim$gc/html/libpng.\+html} modifiee par Yoshimasa Niwa pour le rendre plus simple. J\textquotesingle{}ai transforme ce code en librairie.
+
+\begin{DoxyAuthor}{Auteur}
+Vincent Boyer 
+
+Email \+: {\tt boyer@ai.\+univ-\/paris8.\+fr} 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+09/2015 
+\end{DoxyDate}
+
+
+\subsection{Documentation des définitions de type}
+\mbox{\label{readwritepng_8h_a817d48945e30fe4a531a8e69f185ebae}} 
+\index{readwritepng.\+h@{readwritepng.\+h}!Image\+P\+NG@{Image\+P\+NG}}
+\index{Image\+P\+NG@{Image\+P\+NG}!readwritepng.\+h@{readwritepng.\+h}}
+\subsubsection{Image\+P\+NG}
+{\footnotesize\ttfamily \textbf{ Image\+P\+NG}}
+
+\begin{DoxyRefDesc}{A faire}
+\item[\textbf{ A faire}]Il serait utile que les fonctions de lecture et d\textquotesingle{}ecrire retourne un code de succes ou d\textquotesingle{}erreur. Actuellement la reussite ou l echec dans ses fonctions est materialise par un exit. \end{DoxyRefDesc}
+
+
+Structure permettant de gerer les images 
+
+\subsection{Documentation des fonctions}
+\mbox{\label{readwritepng_8h_ae924d78dc98afe9e76db55c77d639511}} 
+\index{readwritepng.\+h@{readwritepng.\+h}!read\+\_\+png\+\_\+file@{read\+\_\+png\+\_\+file}}
+\index{read\+\_\+png\+\_\+file@{read\+\_\+png\+\_\+file}!readwritepng.\+h@{readwritepng.\+h}}
+\subsubsection{read\+\_\+png\+\_\+file()}
+{\footnotesize\ttfamily void read\+\_\+png\+\_\+file (\begin{DoxyParamCaption}\item[{const char $\ast$}]{filename,  }\item[{\textbf{ Image\+P\+NG} $\ast$}]{Image }\end{DoxyParamCaption})}
+
+
+
+lit un fichier au format png 
+
+
+\begin{DoxyParams}[1]{Paramètres}
+\mbox{\tt in}  & {\em filename} & nom du fichier \\
+\hline
+\mbox{\tt out}  & {\em Image} & pointeur sur une structure de type \doxyref{Image\+P\+NG}{p.}{structImagePNG}\\
+\hline
+\end{DoxyParams}
+\begin{DoxyParagraph}{Exemple\+:}
+read\+\_\+png\+\_\+file(\char`\"{}sun.\+png\char`\"{}, \&image); 
+\end{DoxyParagraph}
+
+
+Références Image\+P\+N\+G\+::bit\+\_\+depth, Image\+P\+N\+G\+::color\+\_\+type, Image\+P\+N\+G\+::height, Image\+P\+N\+G\+::row\+\_\+pointers, et Image\+P\+N\+G\+::width.
+
+
+
+Référencé par main().
+
+\mbox{\label{readwritepng_8h_a503162ce3da80c1228ca16ef9c13d8e7}} 
+\index{readwritepng.\+h@{readwritepng.\+h}!write\+\_\+png\+\_\+file@{write\+\_\+png\+\_\+file}}
+\index{write\+\_\+png\+\_\+file@{write\+\_\+png\+\_\+file}!readwritepng.\+h@{readwritepng.\+h}}
+\subsubsection{write\+\_\+png\+\_\+file()}
+{\footnotesize\ttfamily void write\+\_\+png\+\_\+file (\begin{DoxyParamCaption}\item[{const char $\ast$}]{filename,  }\item[{\textbf{ Image\+P\+NG} $\ast$}]{Image }\end{DoxyParamCaption})}
+
+
+
+ecrit une image dans un fichier au format png 
+
+
+\begin{DoxyParams}[1]{Paramètres}
+\mbox{\tt in}  & {\em filename} & nom du fichier \\
+\hline
+\mbox{\tt in}  & {\em Image} & pointeur sur une structure de type \doxyref{Image\+P\+NG}{p.}{structImagePNG}\\
+\hline
+\end{DoxyParams}
+\begin{DoxyParagraph}{Exemple\+:}
+write\+\_\+png\+\_\+file(\char`\"{}sun.\+png\char`\"{}, \&image); 
+\end{DoxyParagraph}
+
+
+Références Image\+P\+N\+G\+::height, Image\+P\+N\+G\+::row\+\_\+pointers, et Image\+P\+N\+G\+::width.
+
+
+
+Référencé par main().
+
